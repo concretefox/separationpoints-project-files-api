@@ -1,0 +1,38 @@
+Run npm generate to send static files to dist folder
+
+In nuxt js config file - 
+Deploying to GitHub Pages for repository
+https://nuxtjs.org/faq/github-pages/
+
+export default {
+  target: 'static',
+  router: {
+    base: '/repository-name/' // without the <>
+  }
+}
+
+CD to dist folder in terminal
+
+Create repo on github then follow for steps instuctions 
+// https://docs.github.com/en/free-pro-team@latest/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+
+git init
+git add .
+git add README.md
+git commit -m "first commit"                                                  // commit to local repo staging area
+git remote add origin https://github.com/concretefox/separationpoints.git     // Tells where to push
+git remote -v                                                                 // verifies the remote git
+git branch -M main                                                            // create a branch
+git push -u origin main                                                       // push the files
+
+--------------------------------------------------------------------------------------------------------------------------------
+…or create a new repository on the command line
+echo "# separationpoints" >> README.md
+git init
+git add README.md
+git add .                                                                   // add all files to local git
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/concretefox/separationpoints.git
+git push -u origin main
+                

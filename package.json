@@ -1,0 +1,42 @@
+{
+  "homepage": "https://concretefox.github.io/separationpoints-project-files-api.git",
+  "name": "tailwind-v1-examples",
+  "version": "1.0.0",
+  "description": "Separation Points API",
+  "author": "Paul Jones",
+  "private": false,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate --fail-on-page-error",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "export": "next export",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/markdownit": "^1.2.10",
+    "@tailwindcss/typography": "^0.2.0",
+    "assets": "^3.0.1",
+    "audit": "0.0.6",
+    "axios": "^0.21.1",
+    "cross-env": "^5.2.0",
+    "cssloader": "^1.1.1",
+    "date-fns": "^1.30.1",
+    "fix": "0.0.6",
+    "gh-pages": "^3.1.0",
+    "nuxt": "^2.14.7",
+    "nuxt-purgecss": "^1.0.0",
+    "vue-airbnb-style-datepicker": "^2.7.1",
+    "vue-axios": "^3.2.0",
+    "vue-router": "^3.4.9",
+    "vueloader": "0.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "autoprefixer": "^8.6.4",
+    "tailwindcss": "^1.5.1"
+  }
+}

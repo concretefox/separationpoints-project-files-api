@@ -1,0 +1,54 @@
+    <template>
+  <div>
+
+  
+    <iframe
+      id="mixcloud"
+      :src="link"
+      @load="mountApi"
+      width="100%"
+      height="120"
+      frameborder="0"
+      allow="autoplay"
+    >
+    </iframe>
+
+    /*
+  </div>
+</template>
+
+
+
+<script>
+var widget;
+
+export default {
+  name: "mixcloudapi",
+  computed: {
+    link: function () {
+      // ...
+      return link;
+    },
+  },
+  methods: {
+    mountApi: function () {
+      // eslint-disable-next-line
+      widget = Mixcloud.PlayerWidget(document.getElementById("mixcloud"));
+    },
+    play: function () {
+      widget.play();
+    },
+    pause: function () {
+      widget.pause();
+    },
+  },
+};
+
+</script>
+
+
+
+
+
+<style>
+</style>
